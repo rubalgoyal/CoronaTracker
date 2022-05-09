@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="35*35">
+  <title>HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="js/j.js"></script>
+<script src="js/home.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header" style="width:50%">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">CoronaTracker</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="symptom.html">Symptoms</a></li>
+        <li><a href="help.html">HelpLines</a></li>
+        <!-- <li><a href="news.html">News</a></li> -->
+        <li><a href="demographics.html">Demographics</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+            <img src="img/banner1.jpg" alt="Los Angeles" id="banner" class="ban" >
+            </div>
+              <div class="overlay">
+            <div class="text">
+              <h1 class="animated infinite bounce delay-60s" style="font-weight: bold;
+              font-family:'Volkhov', serif;font-size: 40px;">Staying At Home Keeps corona away..!!
+              <em><br/>#stayHome</em><br><em>#staySafe</em></h1>
+            <br/>
+            <p id="quote" style="font-weight: bold;
+            font-family:'Volkhov', serif;font-size:25px;"></p>
+          </div>
+          </div>
+        </div>
+        </div>
+<br><br>
+
+<div class="container">
+  <center><h1 class="heading">COVID-19 Stats For world</h1></center>
+  <div class="row details">
+    <div class="col-md-3">
+      <h1>Cases</h1>
+      <br/>
+      <button class="btn btn-primary" id="cases"></button>
+    </div>
+    <div class="col-md-3">
+      <h1>Deaths</h1>
+      <br/>
+      <button  class="btn btn-primary" id="deaths"></button>
+    </div>
+    <div class="col-md-3">
+      <h1>Recovered</h1>
+      <br/>
+      <button class="btn btn-primary" id="recovered"></button>
+    </div>
+    <div class="col-md-3">
+      <h1>Tests</h1>
+      <br/>
+      <button class="btn btn-primary" id="tests"></button>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br>
+     <center> <h1 class="heading">Search By Country</h1></center>
+     <br/>
+    <div class="input">
+         <input class="form-control" type="text" class="form-control" placeholder="Search" id="country">
+          <br/>
+        </div>
+<br>
+
+  <div class="container abc">
+  </div>
+  <div class="container">
+    <center><h1 class="heading">Lets have deep dive Look statically!!</h1></center><br><br>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 well">
+      
+        <div id="chartContainer"  style="height: 350px; width: 50%;margin:auto">
+        </div>
+          <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+          <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<br><br>
+  <div  class="container">
+    <center><h1 class="default"> COVID-19 Statewise Data</h1></center><br/>
+    <div class="row">
+      <div class="col-md-12" id="mydiv">
+        </div>
+      </div>
+    </div>
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 footer">
+          
+          <center><a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="font-size:40px;color:white;"></i></a>
+          <a href="https://github.com/"><i class="fa fa-github" style="font-size:40px;color:white;"></i></a>
+          <a href="https://www.instgram.com"><i class="fa fa-instagram" style="font-size:40px;color:white;"></i></a></center><br>
+          <center><p style="font-size: 17px">Made with <i class="fa fa-heart" style="color:red"></i> By <a class="linkin" href="https://www.linkedin.com/in/mitisha-goyal-a6514a190/" target="_blank">Rubal Goyal</a> 
+          <center><p style="font-size:20px">Copyright © 2020 | All rights reserved | CoronaTracker</p></center>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
